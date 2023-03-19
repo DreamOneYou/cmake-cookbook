@@ -30,6 +30,6 @@ int main() {
   double A_square = area::square(l);
   std::cout << "A square of side " << l << " has an area of " << A_square
             << std::endl;
-
+  system("pause");
   return EXIT_SUCCESS;
 }

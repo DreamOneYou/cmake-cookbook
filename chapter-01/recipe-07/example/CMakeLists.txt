@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(recipe-07 LANGUAGES C CXX)
 
 # we default to Release build type
+
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
 endif()
