@@ -43,7 +43,7 @@ target_compile_options(message
 add_executable(compute compute-areas.cpp)
 target_compile_options(compute
   PRIVATE
-    "-fPIC"
+    "-fPIC"  # 告诉编译生成位置无关代码，通常主要用于动态库的生成。因为一个进程在执行的过程中，可以会多次调用这部分代码，所以需要确保在运行时可以加载并正确运行库中的函数
 )
 target_compile_options(compute
   PRIVATE
@@ -52,6 +52,7 @@ target_compile_options(compute
     "$<$<CONFIG:Release>:${CXX_FLAGS_RELEASE}>"
 )
 message("CMAKE_CXX_FLAGS:${CMAKE_CXX_FLAGS}")
+
 target_link_libraries(compute message)
 
 # # set minimum cmake version

@@ -22,6 +22,6 @@ int main() {
 
   std::cout << simon->name() << std::endl;
   std::cout << marlowe->name() << std::endl;
-
+  system("pause");
   return EXIT_SUCCESS;
 }

@@ -1,1 +1,7 @@
-../../recipe-08/cxx-example/geometry_polygon.hpp
+#pragma once
+
+namespace geometry {
+namespace area {
+double polygon(int nSides, double side);
+}
+} // namespace geometry
