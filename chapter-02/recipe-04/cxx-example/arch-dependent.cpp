@@ -19,5 +19,6 @@ std::string say_hello() {
 
 int main() {
   std::cout << say_hello() << std::endl;
+  system("pause");
   return EXIT_SUCCESS;
 }
